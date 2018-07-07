@@ -1,0 +1,42 @@
+Model 3
+
+#Flattening
+    flatten = tf.reshape(dropout_2,[-1,6*6*128])
+    #Fully Connected 1 + RELU
+    full_layer_one = tf.layers.dense(inputs=flatten, units = 512, activation=tf.nn.relu)
+    #Dropout Layer 1
+    full_one_dropout = tf.layers.dropout(full_layer_one,rate=0.25, training= train_mode)
+    #Output Layer,containing 2 output nodes.
+    y_pred = tf.layers.dense(inputs=full_one_dropout,units=10)
+
+
+####
+Model 2
+
+ #Flattening
+    flatten = tf.reshape(dropout_2,[-1,6*6*128])
+    #Fully Connected 1 + RELU
+    full_layer_one = tf.layers.dense(inputs=flatten, units = 512, activation=tf.nn.relu)
+    #Dropout Layer 1
+    full_one_dropout = tf.layers.dropout(full_layer_one,rate=0.25, training= train_mode)
+    #Fully Connected 2 + RELU
+    full_layer_two = tf.layers.dense(inputs=full_one_dropout, units = 1024, activation=tf.nn.relu)
+    #Dropout Layer 2
+    full_two_dropout = tf.layers.dropout(full_layer_two,rate=0.75, training= train_mode)
+    #Output Layer,containing 2 output nodes.
+    y_pred = tf.layers.dense(inputs=full_two_dropout,units=10)
+
+####
+Model1
+
+ flatten = tf.reshape(dropout_2,[-1,6*6*128])
+    #Fully Connected 1 + RELU
+    full_layer_one = tf.layers.dense(inputs=flatten, units = 512, activation=tf.nn.relu)
+    #Dropout Layer 1
+    full_one_dropout = tf.layers.dropout(full_layer_one,rate=0.5, training= train_mode)
+    #Fully Connected 2 + RELU
+    full_layer_two = tf.layers.dense(inputs=full_one_dropout, units = 1024, activation=tf.nn.relu)
+    #Dropout Layer 2
+    full_two_dropout = tf.layers.dropout(full_layer_two,rate=0.5, training= train_mode)
+    #Output Layer,containing 2 output nodes.
+    y_pred = tf.layers.dense(inputs=full_two_dropout,units=10)
