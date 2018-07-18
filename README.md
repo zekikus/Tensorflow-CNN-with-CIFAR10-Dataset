@@ -6,3 +6,5 @@ Konvolüsyonel Sinir Ağı'nı eğitirken Google Colab platformunu kullandım. B
 Google Colab Kullanım Linki: https://medium.com/deep-learning-turkiye/google-colab-ile-%C3%BCcretsiz-gpu-kullan%C4%B1m%C4%B1-30fdb7dd822e
 
 Deep Learning Türkiye Grubu: https://medium.com/deep-learning-turkiye
+
+**Konvolüsyonel Sinir Ağlarının Yapısından bahsettiğim döküman:** https://drive.google.com/file/d/14aWos77sr9fPoL5i8Y6m3Rq1_qe9LRXb/view?usp=sharing
